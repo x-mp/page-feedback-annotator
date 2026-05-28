@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Feedback</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand">
+          <img src="icons/icon.svg" alt="" width="32" height="32">
+          <div>
+          <h1>Page Feedback</h1>
+          <p id="pageState">Текущая вкладка</p>
+        </div>
+        </div>
+      </header>
+
+      <section class="control" aria-live="polite">
+        <button id="activeToggle" class="power" type="button" aria-pressed="false">
+          <span class="power-icon" aria-hidden="true"></span>
+          <span id="toggleLabel">Включить</span>
+        </button>
+        <p id="modeText">Плавающая кнопка появится на странице.</p>
+      </section>
+
+      <footer class="meta">
+        <span id="count">0 комментариев</span>
+        <span>Настройки и экспорт находятся в панели на странице.</span>
+      </footer>
+
+      <p id="status" class="status"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

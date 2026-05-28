@@ -1,0 +1,9 @@
+# Privacy Policy
+
+Page Feedback Annotator stores feedback, page-specific notes, and user settings locally in Chrome storage.
+
+The extension does not collect, transmit, sell, or share personal data. It does not use analytics, remote logging, advertising SDKs, or external servers.
+
+The extension requests access to web pages only so the user can select page elements and create local feedback notes. Clipboard access is used only when the user copies the generated Markdown report.
+
+The use of information received from Chrome APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data accessed by the extension is used only to provide the user-facing page feedback and report-copying features. The extension does not transfer, sell, or use user data for advertising.
