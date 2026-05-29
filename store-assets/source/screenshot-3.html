@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Feedback Annotator - Report</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { width: 1280px; height: 800px; margin: 0; overflow: hidden; background: #f5f7fa; color: #18202f; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .wrap { display: grid; grid-template-columns: 470px 1fr; gap: 48px; height: 100%; padding: 72px; }
+      .left { display: flex; flex-direction: column; justify-content: center; }
+      h1 { margin: 0; font-size: 56px; line-height: 1.04; letter-spacing: 0; }
+      p { margin: 22px 0 0; color: #526070; font-size: 22px; line-height: 1.42; }
+      .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+      .tags span { padding: 9px 12px; border: 1px solid #cfe1df; border-radius: 999px; background: #e9fbf7; color: #0b756d; font-size: 15px; font-weight: 700; }
+      .report { align-self: center; min-height: 610px; border: 1px solid #d8e0eb; border-radius: 14px; background: #172033; color: #d6e1ef; box-shadow: 0 24px 70px rgba(15,23,42,.22); overflow: hidden; }
+      .titlebar { height: 44px; display: flex; align-items: center; gap: 8px; padding: 0 16px; border-bottom: 1px solid rgba(255,255,255,.08); background: #111827; }
+      .dot { width: 11px; height: 11px; border-radius: 50%; background: #f87171; box-shadow: 18px 0 #fbbf24, 36px 0 #34d399; }
+      pre { margin: 0; padding: 24px; font: 15px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; }
+      .accent { color: #2dd4bf; }
+      .muted { color: #9fb0c4; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="left">
+        <h1>Copy structured Markdown for handoff</h1>
+        <p>Every comment includes URL, viewport, selectors, DOM path, element bounds, optional text, and the written feedback.</p>
+        <div class="tags"><span>QA reports</span><span>Developer handoff</span><span>AI agent context</span><span>UI review</span></div>
+      </div>
+      <div class="report">
+        <div class="titlebar"><div class="dot"></div></div>
+        <pre><span class="accent">## Page Feedback: /pricing</span>
+**URL:** https://example.com/pricing
+**Viewport:** 1280x800
+**Captured:** 2026-05-29T06:42:18.000Z
+
+<span class="accent">### 1. button.cta.primary</span>
+**Location:** main > section.hero > button.primary
+**Path:** body > main > section.hero > button.cta.primary
+**Elements:** 1
+**Element Rects:** 96,352,180x48
+**Source:** https://example.com/pricing
+**Viewport At Comment:** 1280x800
+**Text:** Start free trial
+**Feedback:** CTA contrast is too low next to the secondary action.
+
+<span class="accent">### 2. div.card + 2</span>
+**Location:** .pricing-card, .pricing-card:nth-of-type(2)
+**Elements:** 3
+**Feedback:** Align pricing cards and make the recommended plan visually clear.</pre>
+      </div>
+    </div>
+  </body>
+</html>

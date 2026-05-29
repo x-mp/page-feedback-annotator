@@ -1,16 +1,19 @@
 # Chrome Web Store Release Guide
 
-Last updated: 2026-05-28
+Last updated: 2026-05-29
 
 ## Package
 
 - Extension name in manifest: `Page Feedback Annotator`
+- Chrome Web Store draft ID: `ejadoalkgjcjifnademeeodkbdminknb`
 - Recommended public GitHub repository name: `page-feedback-annotator`
 - Manifest version: `3`
 - Release version: `1.0.0`
 - Upload ZIP: `dist/page-feedback-annotator-1.0.0.zip`
 - Main icon: `icons/icon.svg`
+- Store icon: `store-assets/icon-128.png`
 - Privacy policy file: `PRIVACY.md`
+- Exact form copy: `CHROME_WEB_STORE_FORM.md`
 
 Official publishing flow: upload the ZIP in Chrome Developer Dashboard, then fill `Store Listing`, `Privacy`, `Distribution`, and `Test instructions`.
 
@@ -209,8 +212,24 @@ Keep feedback local with no accounts or external servers.
 Need before final submission:
 
 ```text
-TODO: create screenshot assets in screenshots/
-TODO: optionally create a promotional tile if the dashboard requests it
+Upload generated assets from store-assets/
+```
+
+Generated assets:
+
+```text
+Store icon: store-assets/icon-128.png
+Screenshots:
+- store-assets/screenshots/01-start-popup.jpg
+- store-assets/screenshots/02-select-comment.jpg
+- store-assets/screenshots/03-markdown-report.jpg
+- store-assets/screenshots/04-local-privacy.jpg
+- store-assets/screenshots/05-workflow.jpg
+Promo tiles:
+- store-assets/promo/small-promo-tile-440x280.jpg
+- store-assets/promo/marquee-promo-tile-1400x560.jpg
+
+
 ```
 
 ## Privacy Tab

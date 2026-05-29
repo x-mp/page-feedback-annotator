@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Feedback Annotator - Workflow</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { width: 1280px; height: 800px; margin: 0; overflow: hidden; background: #f6f8fb; color: #18202f; font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .wrap { height: 100%; padding: 70px; }
+      .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 60px; }
+      h1 { margin: 0; width: 650px; font-size: 56px; line-height: 1.04; letter-spacing: 0; }
+      .lead { width: 410px; margin: 6px 0 0; color: #526070; font-size: 20px; line-height: 1.45; }
+      .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 58px; }
+      .step { position: relative; min-height: 400px; padding: 22px; border: 1px solid #d8e0eb; border-radius: 12px; background: #fbfcfe; box-shadow: 0 14px 34px rgba(15,23,42,.09); overflow: hidden; }
+      .num { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; background: #0f8f83; color: #fff; font-weight: 900; font-size: 18px; }
+      h2 { margin: 18px 0 0; font-size: 24px; line-height: 1.18; }
+      p { margin: 12px 0 0; color: #526070; font-size: 16px; line-height: 1.45; }
+      .visual { position: absolute; left: 22px; right: 22px; bottom: 22px; height: 150px; border-radius: 10px; background: #eef4f8; overflow: hidden; }
+      .v1::before { content: ""; position: absolute; left: 74px; top: 28px; width: 74px; height: 74px; border-radius: 50%; background: #0f8f83; box-shadow: 0 14px 34px rgba(15,143,131,.24); }
+      .v1::after { content: ""; position: absolute; left: 104px; top: 44px; width: 8px; height: 34px; border-radius: 99px; background: #fff; box-shadow: 0 20px 0 -2px #fff; }
+      .v2::before { content: ""; position: absolute; left: 24px; top: 24px; width: 172px; height: 92px; border: 3px solid #0f8f83; border-radius: 9px; background: rgba(15,143,131,.08); }
+      .v3::before { content: ""; position: absolute; inset: 20px; border-radius: 8px; background: #172033; }
+      .v3::after { content: ""; position: absolute; left: 36px; right: 36px; top: 38px; height: 10px; border-radius: 99px; background: #2dd4bf; box-shadow: 0 22px 0 #d6e1ef, 0 44px 0 #d6e1ef, 0 66px 0 #9fb0c4; }
+      .v4::before { content: ""; position: absolute; left: 30px; top: 28px; width: 42px; height: 42px; border-radius: 8px; background: #0f8f83; box-shadow: 58px 0 #172033, 116px 0 #d8e0eb; }
+      .v4::after { content: ""; position: absolute; left: 30px; right: 30px; bottom: 30px; height: 14px; border-radius: 99px; background: #cfd8e5; box-shadow: 0 24px #dfe6ef; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <h1>A compact workflow for page review</h1>
+        <p class="lead">Use one extension for visual QA, UX notes, developer tickets, and AI-ready context.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><h2>Turn it on</h2><p>Click the toolbar icon and enable annotation for the current page.</p><div class="visual v1"></div></div>
+        <div class="step"><div class="num">2</div><h2>Select elements</h2><p>Click or drag over page UI to capture exactly what needs review.</p><div class="visual v2"></div></div>
+        <div class="step"><div class="num">3</div><h2>Copy Markdown</h2><p>Export selectors, paths, coordinates, page URL, viewport, and notes.</p><div class="visual v3"></div></div>
+        <div class="step"><div class="num">4</div><h2>Hand off clearly</h2><p>Paste the report into issues, docs, chat, or AI coding workflows.</p><div class="visual v4"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

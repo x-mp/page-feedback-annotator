@@ -10,6 +10,8 @@ Status: prepared for first submission.
 - Release ZIP: `dist/page-feedback-annotator-1.0.0.zip`
 - Privacy policy: `PRIVACY.md`
 - Store listing guide: `STORE_RELEASE_GUIDE.md`
+- Store form copy and upload assets: `CHROME_WEB_STORE_FORM.md`
+- Chrome Web Store draft ID: `ejadoalkgjcjifnademeeodkbdminknb`
 - Chrome Web Store URL: TODO after publication
 
 ## Release UX
@@ -81,3 +83,4 @@ Before reporting a bug, include:
 - Add one comment and copy the report from the page panel.
 - Close the panel and refresh the page. The floating button should stay hidden.
 - Check the toolbar icon at pinned size.
+- Upload Store assets from `store-assets/`.

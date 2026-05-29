@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Page Feedback Annotator - Start</title>
+    <style>
+      * { box-sizing: border-box; }
+      body {
+        width: 1280px;
+        height: 800px;
+        margin: 0;
+        overflow: hidden;
+        background: #f5f7fa;
+        color: #172033;
+        font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      .browser { position: absolute; inset: 32px; border: 1px solid #d8e0eb; border-radius: 14px; background: #fbfcfe; box-shadow: 0 24px 70px rgba(19, 34, 56, .16); overflow: hidden; }
+      .chrome { height: 58px; display: flex; align-items: center; gap: 14px; padding: 0 18px; border-bottom: 1px solid #d8e0eb; background: #eef2f7; }
+      .dot { width: 12px; height: 12px; border-radius: 50%; background: #f87171; box-shadow: 20px 0 #fbbf24, 40px 0 #34d399; }
+      .bar { flex: 1; height: 34px; display: flex; align-items: center; padding: 0 16px; border: 1px solid #d3dce8; border-radius: 999px; background: #fff; color: #617084; font-size: 14px; }
+      .toolbar-icon { width: 34px; height: 34px; border-radius: 8px; box-shadow: 0 1px 3px rgba(15, 23, 42, .16); }
+      .page { position: relative; height: 710px; padding: 54px 58px; background: linear-gradient(180deg, #fbfcfe 0%, #eef8f6 100%); }
+      .layout { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; height: 100%; }
+      h1 { margin: 0; max-width: 520px; font-size: 58px; line-height: 1.02; letter-spacing: 0; }
+      .lead { margin: 22px 0 0; max-width: 520px; color: #526070; font-size: 22px; line-height: 1.45; }
+      .bullets { display: grid; gap: 12px; margin-top: 34px; color: #344255; font-size: 18px; }
+      .bullets span::before { content: ""; display: inline-block; width: 10px; height: 10px; margin-right: 12px; border-radius: 50%; background: #0f8f83; }
+      .popup { width: 300px; margin-left: auto; margin-right: 86px; padding: 16px; border: 1px solid #d9e0ea; border-radius: 14px; background: #f6f7f9; box-shadow: 0 24px 70px rgba(15, 23, 42, .20); }
+      .brand { display: flex; align-items: center; gap: 10px; }
+      .brand img { width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 1px 3px rgba(15, 23, 42, .18); }
+      .brand strong { display: block; font-size: 17px; line-height: 1.2; }
+      .brand span { display: block; margin-top: 3px; color: #556274; font-size: 12px; }
+      .control { display: grid; justify-items: center; gap: 12px; margin-top: 20px; padding: 18px 14px 16px; border: 1px solid #d9e0ea; border-radius: 8px; background: #fbfcfe; }
+      .power { position: relative; width: 112px; height: 112px; border: 1px solid #08766d; border-radius: 999px; background: radial-gradient(circle at 50% 35%, #21c8b6, #0f8f83); box-shadow: 0 14px 34px rgba(15, 143, 131, .34), inset 0 -9px 18px rgba(4, 78, 72, .25); color: #f8fafc; }
+      .power::before { content: ""; position: absolute; left: 50%; top: 12px; width: 4px; height: 28px; border-radius: 99px; background: currentColor; transform: translateX(-50%); }
+      .power::after { content: ""; position: absolute; left: 50%; top: 33px; width: 28px; height: 34px; border: 4px solid currentColor; border-bottom-color: transparent; border-radius: 18px 18px 6px 6px; transform: translateX(-50%); }
+      .power span { position: absolute; left: 0; right: 0; bottom: 24px; text-align: center; font-size: 13px; font-weight: 700; }
+      .hint { max-width: 220px; min-height: 34px; margin: 0; color: #526070; font-size: 13px; line-height: 1.35; text-align: center; }
+      .meta { display: grid; gap: 6px; margin-top: 12px; color: #7a8697; font-size: 12px; line-height: 1.35; }
+      .callout { position: absolute; right: 92px; bottom: 70px; width: 286px; padding: 15px 16px; border-left: 5px solid #0f8f83; border-radius: 8px; background: #ffffff; color: #344255; box-shadow: 0 14px 34px rgba(15, 23, 42, .14); font-size: 17px; line-height: 1.35; }
+    </style>
+  </head>
+  <body>
+    <div class="browser">
+      <div class="chrome">
+        <div class="dot"></div>
+        <div class="bar">https://example.com/product-page</div>
+        <img class="toolbar-icon" src="../../icons/icon.svg" alt="">
+      </div>
+      <div class="page">
+        <div class="layout">
+          <div>
+            <h1>Turn any page into actionable feedback</h1>
+            <p class="lead">Start the annotator from the toolbar, select elements in context, and keep the workflow focused on the current page.</p>
+            <div class="bullets">
+              <span>One-click on/off popup</span>
+              <span>Floating panel appears on the page</span>
+              <span>No account, tracking, or external server</span>
+            </div>
+          </div>
+          <div class="popup">
+            <div class="brand">
+              <img src="../../icons/icon.svg" alt="">
+              <div><strong>Page Feedback</strong><span>example.com</span></div>
+            </div>
+            <div class="control">
+              <div class="power"><span>On</span></div>
+              <p class="hint">The feedback panel is open on the page.</p>
+            </div>
+            <div class="meta"><strong>0 comments</strong><span>Settings and export are in the page panel.</span></div>
+          </div>
+        </div>
+        <div class="callout">Designed for QA, UI review, design feedback, and developer handoff.</div>
+      </div>
+    </div>
+  </body>
+</html>
