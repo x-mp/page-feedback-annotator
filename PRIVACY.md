@@ -6,7 +6,9 @@ Extension ID: `ejadoalkgjcjifnademeeodkbdminknb`
 
 Page Feedback Annotator stores feedback, page-specific notes, and user settings locally in Chrome storage.
 
-The extension does not collect, transmit, sell, or share personal data. It does not use analytics, remote logging, advertising SDKs, or external servers.
+The extension stores website content needed for the feedback report, including selected element metadata, optional short element text, selectors, DOM paths, page URL, viewport, and the written comment. It does not collect or transmit this data to the developer or any third party.
+
+The extension does not sell or share personal data. It does not use analytics, remote logging, advertising SDKs, or external servers.
 
 The extension requests access to web pages only so the user can select page elements and create local feedback notes. Clipboard access is used only when the user copies the generated Markdown report.
 
